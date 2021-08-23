@@ -1,0 +1,22 @@
+{
+  "name": "@musakui/twitch",
+  "description": "Twitch tools",
+  "keywords": [
+    "twitch"
+  ],
+  "author": "musakui",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/musakui/twitch"
+  },
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": "./lib/index.js"
+  }
+}
