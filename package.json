@@ -17,6 +17,7 @@
   ],
   "types": "./lib/index.d.ts",
   "exports": {
+    "api": "./lib/api.js",
     ".": "./lib/index.js"
   }
 }
