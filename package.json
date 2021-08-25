@@ -10,14 +10,15 @@
     "type": "git",
     "url": "https://github.com/musakui/twitch"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "lib"
   ],
   "types": "./lib/index.d.ts",
   "exports": {
-    "api": "./lib/api.js",
+    "./api": "./lib/api.js",
+    "./chat": "./lib/chat.js",
     ".": "./lib/index.js"
   }
 }
