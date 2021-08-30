@@ -1,2 +1,2 @@
-type API = (path: string, data?: object) => Promise<object>
-declare function create(token: string): API
+type API = (path: string, params?: object, post?: object | boolean) => Promise<object>
+declare function create(token: string, clientId: string): API
