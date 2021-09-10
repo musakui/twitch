@@ -8,11 +8,12 @@ interface PubSubOptions {
 }
 
 declare class PubSub extends WebSocket {
-  constructor(token: string, topics: Record<string, Topic>, opts?: PubSubOptions)
-  on(name: string, handler: EventHandler): EventHandlerRemover
+  constructor(opts?: PubSubOptions)
+  on(name: Topic, handler: EventHandler): EventHandlerRemover
+  subscribe(topics: Topic[], token: string): Promise<Topic[]>
 }
 
-export function create(token: string, topics: Record<string, Topic>, opts?: PubSubOptions): PubSub
+export function create(opts?: PubSubOptions): PubSub
 
 declare namespace Topics {
   export function bits(id: string): Topic
